@@ -1,3 +1,4 @@
+
 import 'package:exam/Screen_one/HealthScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       initialRoute: HealthScreen.routeName,
       routes: {
         HealthScreen.routeName:(context)=>HealthScreen(),
