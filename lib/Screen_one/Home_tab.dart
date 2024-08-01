@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:exam/Screen_one/small_container.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import 'Health_container.dart';
@@ -27,19 +28,29 @@ class _HomeTabState extends State<HomeTab> {
             children: [
               Text(
                 'Hello,',
-                style: TextStyle(fontSize: 20),
+                style: GoogleFonts.inter(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w400,
+                    color: Color(0xff371B34)
+                ),
               ),
               Text(
                 ' Sara Rose',
-                style:
-                TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+                style: GoogleFonts.inter(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  color: Color(0xff371B34)
+                ),
               ),
             ],
           ),
           SizedBox(height: 15,),
           Text(
             'How are you feeling today ?',
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w400),
+            style: GoogleFonts.inter(
+              fontWeight: FontWeight.w400,
+              fontSize: 16,
+            )
           ),
           SizedBox(height: 25),
           Row(
@@ -55,17 +66,18 @@ class _HomeTabState extends State<HomeTab> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Feature',style: TextStyle(
+              Text('Feature',style: GoogleFonts.inter(
                   fontSize: 18,
                   fontWeight: FontWeight.w600
               ),),
               Row(
                 children: [
-                  Text('See more ',style: TextStyle(
+                  Text('See more ',style: GoogleFonts.inter(
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
                     color: Color(0xff027A48),
-                  ),),
+                  )
+                  ),
                   Icon(Icons.arrow_forward_ios_rounded,size: 14,color: Color(0xff027A48),)
                 ],
               )
@@ -79,6 +91,8 @@ class _HomeTabState extends State<HomeTab> {
               } ,
               options: CarouselOptions(
                   enlargeCenterPage: true,
+                  viewportFraction: 1,
+                  enableInfiniteScroll: false,
                   onPageChanged: (index,reason){
                     setState(() {
 
@@ -95,17 +109,17 @@ class _HomeTabState extends State<HomeTab> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Exercise',style: TextStyle(
+              Text('Exercise',style: GoogleFonts.inter(
                   fontSize: 18,
                   fontWeight: FontWeight.w600
               ),),
               Row(
                 children: [
-                  Text('See more ',style: TextStyle(
+                  Text('See more ',style: GoogleFonts.inter(
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
                     color: Color(0xff027A48),
-                  ),),
+                  )),
                   Icon(Icons.arrow_forward_ios_rounded,size: 14,color: Color(0xff027A48),)
                 ],
               )

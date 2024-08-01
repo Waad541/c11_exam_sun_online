@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SmallContainer extends StatelessWidget {
   String image;
@@ -21,10 +22,10 @@ class SmallContainer extends StatelessWidget {
           children: [
             Image.asset('$image'),
             SizedBox(width: 15),
-            Text('$text',style: TextStyle(
-              fontWeight: FontWeight.w500,
-              fontSize: 14
-            ),)
+            Text('$text',style: GoogleFonts.inter(
+                fontWeight: FontWeight.w500,
+                fontSize: 14
+            ))
 
           ],
         ),

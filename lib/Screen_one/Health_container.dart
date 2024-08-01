@@ -14,8 +14,9 @@ class HealthContainer extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
+            flex:3,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal:15,vertical: 10),
+              padding: const EdgeInsets.symmetric(horizontal:15,vertical: 30),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -37,13 +38,14 @@ class HealthContainer extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 6,
+                    height: 15,
                   ),
                   Row(
                     children: [
                       Icon(
                         Icons.play_circle,
                         color: Color(0xff32D583),
+                        size: 25,
                       ),
                       SizedBox(
                         width: 4,
@@ -60,6 +62,7 @@ class HealthContainer extends StatelessWidget {
             ),
           ),
           Expanded(
+            flex: 2,
             child: Image.asset('assets/images/Walking the Dog.png'),
           ),
         ],

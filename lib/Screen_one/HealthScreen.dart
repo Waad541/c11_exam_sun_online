@@ -33,7 +33,10 @@ class _HealthScreenState extends State<HealthScreen> {
         titleSpacing: 0,
         title: Text(
           'Moody',
-          style: TextStyle(fontWeight: FontWeight.bold),
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontFamily: 'kefafont',
+              fontSize: 24),
         ),
         actions: [
           Padding(
